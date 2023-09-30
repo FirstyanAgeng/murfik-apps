@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linktree 3D dan Animasi</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f0f0f0;
+      }
+
+      h1 {
+        font-size: large;
+      }
+
+      .wrapper {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        margin-top: 500px;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .container:hover {
+        transform: scale(1.05);
+        background-color: lightblue;
+        color: white;
+        transition: 0.5s ease;
+        cursor: pointer;
+        .link {
+          background-color: blue;
+          color: white;
+        }
+      }
+
+      .link-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .link {
+        text-decoration: none;
+        color: #333;
+        margin: 10px 0;
+        padding: 10px;
+        background-color: #f7f7f7;
+        border-radius: 5px;
+        position: relative;
+        transition: transform 0.3s ease-in-out;
+        width: 200px;
+      }
+
+      .link:hover {
+        transform: rotateY(30deg) scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <h1>Murfik's Apps</h1>
+        <div class="link-container">
+          <a class="link" href="https://www.example.com">Link 1</a>
+          <a class="link" href="https://www.example.com">Link 2</a>
+          <a class="link" href="https://www.example.com">Link 3</a>
+          <a class="link" href="https://www.example.com">Link 4</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
